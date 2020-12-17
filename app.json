@@ -1,0 +1,12 @@
+{
+  "name": "ecg",
+  "displayName": "ecg",
+  "expo": {
+    "name": "ecg",
+    "slug": "ecg",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
