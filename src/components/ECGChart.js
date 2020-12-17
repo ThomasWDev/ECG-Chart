@@ -4,17 +4,24 @@ import React, {
 import {
     View,
 } from 'react-native';
-import {Svg, Circle, Defs, Rect, Ellipse, Path, Pattern, LinearGradient, Stop} from "react-native-svg";
 
-const ECGChart = (props) => {
+import {AnimatedSVGPath} from 'react-native-svg-animations';
+
+const HISVG = (props) => {
     return (
-        <View style={{ marginTop: 40, backgroundColor: "#000" }}>
-            <Svg height="50%" width="50%" viewBox="0 0 100 100" {...props}>
-                <Circle cx="50" cy="50" r="45" stroke="blue" strokeWidth="2.5" fill="green" />
-                <Rect x="15" y="15" width="70" height="70" stroke="red" strokeWidth="2" fill="yellow" />
-            </Svg>
+        <View style={{ marginTop: 40 }}>
+            <AnimatedSVGPath
+                strokeColor={"green"}
+                duration={1600}
+                strokeWidth={3}
+                height={200}
+                width={200}
+                scale={1.0}
+                delay={0}
+                d='M17.902,114.475h26.949c2.296,0,12.876-10.182,20.063-10.182c7.186,0,10.83,10.182,12.576,10.182h18.266l7.187,10.779l7.485-100.91l5.091,114.984l6.887-24.554h24.41c3.239,0,14.816-16.769,20.206-16.769s11.08,16.47,13.475,16.47c2.845,0,26.665,0,26.365,0'
+            />
         </View>
     );
 }
 
-export default ECGChart;
+export default HISVG;
